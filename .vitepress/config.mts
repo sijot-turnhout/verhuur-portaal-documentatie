@@ -5,7 +5,6 @@ export default defineConfig({
   title: "Verhuurportaal docs",
   description: "De bijhorende documentatie van het verhuur portaal voor Scouts en Gidsen Sint-Joris Turnhout",
   cleanUrls: false,
-  base: '/verhuur-portaal-documentatie/',
   srcDir: 'src',
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
