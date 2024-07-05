@@ -1,0 +1,32 @@
+{
+  "name": "verhuur-portaal-documentatie",
+  "version": "1.0.0",
+  "description": "De bijhorende documentatie van het verhuur portaal voor Scouts en Gidsen Sint-Joris Turnhout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sijot-turnhout/verhuur-portaal-documentatie.git"
+  },
+  "keywords": [
+    "documentatie",
+    "verhuringen",
+    "project",
+    "gebruik"
+  ],
+  "author": "Tim Joosten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sijot-turnhout/verhuur-portaal-documentatie/issues"
+  },
+  "homepage": "https://github.com/sijot-turnhout/verhuur-portaal-documentatie#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "vitepress": "^1.2.3"
+  }
+}
