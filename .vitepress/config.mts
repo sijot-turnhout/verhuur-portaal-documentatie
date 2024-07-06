@@ -10,19 +10,48 @@ export default defineConfig({
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
     sidebar: [
+      { text: 'Project informatie', link: '/' },
+      { text: 'Installatie', link: 'getting-started/installation' },
+      { text: 'CLI', link: '/cli' },
+
       {
-        text: 'Examples',
+        text: 'Gebruikersbeheer',
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Mijn profiel', link: '/users/profile' },
+          { text: 'Gebruikersgroepen', link: '/users/user-groups' },
+          { text: 'Gebruikersbeheer', link: '/users' },
+        ],
+      },
+
+      {
+        text: 'Verhuurbeheer',
+        collapsed: false,
+        items: [
+          { text: 'Verhuringen', link: '/leases/overview' },
+          { text: 'Huurders', link: '/leases/huurders' },
+          { text: 'Nutsverbruik', link: '/leases/utility-usage' },
+          { text: 'Facturatie', link: '/leases/billing' },
+          { text: 'Offertes', link: '/leases/quotations' },
+        ],
+      },
+
+      {
+        text: 'Lokalenbeheer',
+        collapsed: false,
+        items: [
+          { text: 'Lokalen', link: '/facilities' },
+          { text: 'Werkpunten', link: 'facilities/issues' },
         ]
+      },
+
+      {
+        text: 'Integraties',
+        collapsed: false,
+        items: [
+          { text: 'Sentry', link: '/integrations/sentry' }
+        ],
       }
     ],
 
