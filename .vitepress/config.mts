@@ -10,6 +10,10 @@ export default defineConfig({
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   themeConfig: {
+    footer: {
+      message: 'Vrijgegeven onder de MIT licentie',
+      copyright: 'Copyright © 2019-present Scouts en Gidsen Sint-Joris Turnhout',
+    },
     nav: [
       {
         text: 'versie: v1.x',

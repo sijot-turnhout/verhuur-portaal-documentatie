@@ -10,13 +10,15 @@ Deze handleiding biedt gedetailleerde instructies over hoe u het systeem kunt ge
 
 ## Overzicht van tracking data en verklaring
 
+
+
 ## Initialiseren van verbruiksgegevens
 
 ## Aanpassen van de gegevens
 
 ## Registratie van verbruik
 
-> *Lees ook het stukje omtrent het nutsverbruik in de [facturatie documentatie]()*
+> *Lees ook het stukje omtrent het nutsverbruik in de [facturatie documentatie](/leases/billing)*
 
 Na het aanpassen van het verbruik kunt u deze registreren in de applicatie.
 Bij het registreren van het verbruik word geacht dat de gegevens compleet zijn en kunnen deze gegevens niet meer aangepast worden. 
