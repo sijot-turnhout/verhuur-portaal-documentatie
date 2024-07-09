@@ -10,6 +10,14 @@ export default defineConfig({
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   themeConfig: {
+    nav: [
+      {
+        text: 'versie: v1.x',
+        items: [
+          { text: 'v1.x', link: 'v1.x' },
+        ]
+      }
+    ],
     sidebar: [
       { text: 'Project informatie', link: '/' },
       { text: 'Installatie', link: 'getting-started/installation' },
@@ -31,6 +39,7 @@ export default defineConfig({
         items: [
           { text: 'Verhuringen', link: '/leases/overview' },
           { text: 'Huurders', link: '/leases/huurders' },
+          { text: 'Notities', 'link': '/leases/notes' },
           { text: 'Nutsverbruik', link: '/leases/utility-usage' },
           { text: 'Facturatie', link: '/leases/billing' },
           { text: 'Offertes', link: '/leases/quotations' },
