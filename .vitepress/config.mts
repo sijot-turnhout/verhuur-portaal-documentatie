@@ -7,9 +7,13 @@ export default defineConfig({
   cleanUrls: false,
   base: '/verhuur-portaal-documentatie',
   srcDir: 'src',
+  lastUpdated: true,
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/sijot-turnhout/verhuur-portaal-documentatie/edit/main/src/:path'
+    },
     footer: {
       message: 'Vrijgegeven onder de MIT licentie',
       copyright: 'Copyright © 2019-present Scouts en Gidsen Sint-Joris Turnhout',
