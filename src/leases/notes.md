@@ -1,0 +1,80 @@
+# Overzicht van de notitie feature 
+
+De notitie feature is ontworpen om de communicatie en het beheer binnen het verhuringssysteem te verbeteren.
+Deze functionaliteit stelt gebruikers in staat om belangrijke opmerkingen en informatie te documenteren voor zowel huurders als 
+specifieke verhuur.
+
+De functionaliteit is opgedeeld in de documentatie in de volgende delen.
+
+- Notities voor huurder
+- Notities voor verhuringen 
+- Zichtbaarheid van een notitie
+- Automatisch verwijderen van notities
+
+## Voordelen van deze feature
+
+- **Verbeterde communicatie:** Door notities toe te voegen, kunnen gebruikers belangrijke informatie documenteren en delen, wat de communicatie en samenwerking verbetert.
+- **Efficientie:** Met notities kan informatie snel worden geraadpleegd en bijgewerkt, wat tijd bespaart en het beheerproces stroomlijnt.
+- **Betere klantenservice:** Door notities over huurders en hun voorkeuren bij te houden, kunnen scoutsgroepen een meer gepersonaliseerde en efficiente service bieden.
+ 
+## Notities voor huurders 
+
+De volgende functionaliteiten zijn van toepassing op het notitie systeem dat gerelateerd is aan de huurders. 
+
+### Toevoegen van notities
+
+Gebruikers kunnen notities toevoegen aan het profiel van een huurder. Dit kan nuttig zijn voor het bijhouden van relevante informatie 
+zoals speciale wensen, eerdere ervaringen of contactinformatie. Of inbreuken van een bepaalde grote die worden meegenomen 
+naar verdere verhuur aanvragen.
+
+## Bewerken en verwijderen van notities
+
+Notities kunnen indien nodig bewerkt of verwijderd, waardoor de informatie actueel en relevant blijft. Voor iedereen en er tussen de 
+beheerders een zekere transparantie ontstaat.
+
+### Bekijken van notities 
+
+Alle notities die aan een huurder zijn gekoppeld kunnen eenvoudig worden bekeken door gebruikers. Geen verdere permissies zijn 
+nodig hiervoor. Omdat we sterk geloven dat de notities zichtbaar moeten zijn voor elke beheerder.
+
+## Notities voor de verhuringen
+
+De notitie feature is ontworpen om de communicatie en het beheer van een verhuring te verbeteren.
+Deze functionaliteit stelt gebruikers in staat om belangrijke opmerkingen en informatie te documenten met specifieke toespitsing op
+de verhuringen in de applicatie. 
+
+### Toevoegen van notities
+
+Tijdens het beheren van een specieke verhuring kunnen gebruikers notities toevoegen die relevant zijn voor de specifieke verhuur. 
+Dit kan een betrekking hebben op afspraken, betalingsinformatie, of bijzonderhden over de verhuur (denk aan bv meegeleverde tafels).
+Om een notitie aan verhuringen toe te voegen zijn geen specifieke permissies of gebruikersgroepen vereist.
+
+### Bekijken van notities 
+
+Gebruikers van de applicaties kunnen alle notities inkijken die gekoppeld zijn aan de verhuring. Dit zorgt voor de nodige transparantie. 
+
+### Bewerken en verwijderen van notities
+
+Notities die zijn gekoppeld aan een verhuring kunnen ook worden bewerkt en of verwijderd. Zodat de informatie accuraat blijft
+
+## Gebruiksscenario
+
+### Huurders
+
+Stel dat een huurder Jan Jansen in dit voorbeeld, vaak specifieke eisen heeft voor de inrichting van de gehuurde ruimte. 
+Een beheerde kan dan een notitie toevoegen aan het huurdersprofiel van jan waarin deze eisen worden vermeld.
+Wanneer jan opnieuw een reservering aanvraagt, kan de beheerder deze notitie raadplegen en ervoor zorgen dat aan zijn wensen wordt voldaan.
+
+### Verhuringen 
+
+Een scoutsgroep verhuurt hun lokaal/domain aan een externe partij voor een weekend of kamp. 
+Tijdens de verhuur is er afgesproken dat de huurder een extra vergoeding betaalt voor het gebruik van bepaalde faciliteiten. 
+De beheerder kan een notitie toevoegen aan deze specifieke verhuurtransactie waarin de detauls van deze afspraak worden vastgelegd.
+Dit zorgt ervoor dat alle betrokkenen duidelijk op hoogte zijn van de voorwaarden.
+
+## Conclusie 
+
+De notitie feature is een waardevolle toevoeging zzn het verhuringssysteem voor scoutsgroepen, waarmee gebruikers belangrijke informatie 
+kunnen vastleggen en beheren. Of het nu gaat om notities over huurders of specifieke verhuurtransacties, deze functionaliteit draagt 
+bij aan een verbeterde communicatie, efficientie en klantenservice binnen het systeem.
+
