@@ -60,6 +60,7 @@ export default defineConfig({
         items: [
           { text: 'Lokalen', link: '/facilities' },
           { text: 'Werkpunten', link: 'facilities/issues' },
+
         ]
       },
 
@@ -73,7 +74,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/sijot-turnhout/verhuursportaal' }
     ]
   }
 })
