@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Verhuurportaal docs",
+  title: "SIJOT Verhuurportaal docs",
   description: "De bijhorende documentatie van het verhuur portaal voor Scouts en Gidsen Sint-Joris Turnhout",
   cleanUrls: false,
   base: '/verhuur-portaal-documentatie',
@@ -11,6 +11,8 @@ export default defineConfig({
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
   ignoreDeadLinks: true,
   themeConfig: {
+    siteTitle: "SIJOT verhuursportaal",
+
     editLink: {
       pattern: 'https://github.com/sijot-turnhout/verhuur-portaal-documentatie/edit/main/src/:path'
     },
@@ -33,7 +35,7 @@ export default defineConfig({
 
       {
         text: 'Gebruikersbeheer',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Mijn profiel', link: '/users/profile' },
           { text: 'Gebruikersgroepen', link: '/users/user-groups' },
@@ -43,7 +45,7 @@ export default defineConfig({
 
       {
         text: 'Verhuurbeheer',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Verhuringen', link: '/leases/overview' },
           { text: 'Huurders', link: '/leases/huurders' },
@@ -56,7 +58,7 @@ export default defineConfig({
 
       {
         text: 'Lokalenbeheer',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Lokalen', link: '/facilities' },
           { text: 'Werkpunten', link: 'facilities/issues' },
@@ -66,7 +68,7 @@ export default defineConfig({
 
       {
         text: 'Integraties',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Sentry', link: '/integrations/sentry' }
         ],
