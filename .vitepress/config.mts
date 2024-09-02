@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import footnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -38,6 +39,7 @@ export default defineConfig({
           { text: 'Mijn profiel', link: '/users/profile' },
           { text: 'Gebruikersgroepen', link: '/users/user-groups' },
           { text: 'Gebruikersbeheer', link: '/users' },
+          { text: 'Permissies', link: '/users/permissions', },
         ],
       },
 
@@ -75,6 +77,12 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sijot-turnhout/verhuursportaal' }
-    ]
+    ],
+
+    markdown: {
+      config: (md) => {
+        md.use(footnote)
+      }
+    }
   }
 })
