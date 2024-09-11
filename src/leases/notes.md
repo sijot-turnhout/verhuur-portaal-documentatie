@@ -6,6 +6,7 @@ specifieke verhuur.
 
 De functionaliteit is opgedeeld in de documentatie in de volgende delen.
 
+- Permissies
 - Notities voor huurder
 - Notities voor verhuringen 
 - Zichtbaarheid van een notitie
@@ -17,6 +18,37 @@ De functionaliteit is opgedeeld in de documentatie in de volgende delen.
 - **Efficientie:** Met notities kan informatie snel worden geraadpleegd en bijgewerkt, wat tijd bespaart en het beheerproces stroomlijnt.
 - **Betere klantenservice:** Door notities over huurders en hun voorkeuren bij te houden, kunnen scoutsgroepen een meer gepersonaliseerde en efficiente service bieden.
  
+## Permissies
+
+Omdat notities bij een verhuring en of huurder van gevoelige aard kunnen zijn hebben we dit stukje van de applicatie opgebouwd onder een authorisatie policy. 
+Deze authorisatie policy definieert wie onder welke omstandigheden een notitie kan bekijken, bewerken en of verwijderen. We documenteren deze met de woorden 
+`deny` voor weigering en `allow` als toelating.
+
+De meer algemene informatie voor de permissies kan je [hier](/users/permissions) vinden.
+
+### Omtrent de notities van een verhuring 
+
+Bij het beheren van de notities van een verhuring is het van belang om te bepalen welke informatie gedeeld kan worden en met wie. 
+Deze notities bevatten vaak details over de staat van de verhuur, afspraken over betalingen, en eventuele opmerkingen over schade of reparaties. 
+Het is belangrijk om de privacy van de huurder te respecteren en gevoelige informatie alleen te delen met partijen die daartoe bevoegd zijn. 
+
+Daarom hebben de notities opgebouwd van enkele permissies hieronder definieren we een tabel met alle permissies en info omtrent wie wat kan met de notities
+die betrekking hebben tot de verhuring. 
+
+| &nbsp;                                     | **viewAny**     | **view**        | **create**        | **update**                    | **destroy**                   |
+|:------------------------------------------ | :-------------- | :-------------- | :---------------- | :---------------------------- | :---------------------------- |
+| **Gebruikers**                             | `deny`          | `deny`          | `deny`            | `deny`                        | `deny`                        |
+| **Raad van bestuur** <sup><i>(2)</i></sup> | `allow`         | `allow`         | `allow`           | `allow` <sup><i>(1)</i></sup> | `allow` <sup><i>(1)</i></sup> |
+| **Administrator** <sup><i>(2)</i></sup>    | `allow`         | `allow`         | `allow`           | `allow` <sup><i>(1)</i></sup> | `allow` <sup><i>(1)</i></sup> |  
+| **Webmaster** <sup><i>(2)</i></sup>        | `allow`         | `allow`         | `allow`           | `allow`                       | `allow`                       |
+
+<small>***1.*** De authorisatie laat het alleen toe om de manipulatie uit te voeren wanneer de geauthenticeerde gebruiker de autheur is van de notitie.</small>
+
+<small>***2.*** Een gebruiker in deze groep zal de authorisatie krijgen indien hij/zij is aangesteld om de verhuring dat is gelinkt aan de notitie op te volgen en te begeleiden.</small>
+
+### Omtrent de notities van een huurder
+
+
 ## Notities voor huurders 
 
 De volgende functionaliteiten zijn van toepassing op het notitie systeem dat gerelateerd is aan de huurders. 
