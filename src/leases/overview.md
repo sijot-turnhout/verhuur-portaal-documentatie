@@ -16,6 +16,8 @@ Dit is de eerste status van het verhuurproces en geeft aan dat een aanvraag in a
 **Mogelijke overgangen** 
 
 - **Optie (offerte)**: Als de domeinbeheerder de aanvraag in behandeling neemt en een offerte opstelt, wordt de status veranderd naar "Optie (offerte)".
+- **Optie**: De huurder wernst geen offerte en wenst direct over te gaan met de benodigde stappen om de verhuring te bevestigen.
+- **Bevestigd**: De huurder is de groepwerking of bv leiding die intern een verhuur heeft geregeld voor een kampvuur avond bv. 
 - **Geannuleerd**: De huuder of beheerde kan de aanvraag op dit punt nog annuleren. (bv: wanneer de opgegeven periode niet meer beschikbaar is)
 
 ### Status: optie (offerte)
@@ -68,11 +70,11 @@ De status **Geannuleerd** wordt gebruikt wanneer een aanvraag of reservering op 
 
 De tabel hieronder geeft een overzicht van de verschillende statussen die een verhuuraanvraag kan doorlopen en welke mogelijke statusovergangen op elk moment in het proces beschikbaar zijn.
 
-| Huidige status      | Mogelijke vervolg statussen                 | 
-| :------------------ | :------------------------------------------ |
-| Nieuwe aanvraag     | Optie (oifferte), Geannuleerd               |
-| Optie (offerte)     | Optie, Gannuleerd                           |
-| Optie               | Bevestigd, Geannuleerd                      |
-| Bevestigd           | Afgesloten, Geannuleerd                     |
-| Afgesloten          | Geen (proces voltooid)                      |
-| Geannuleerd         | Geen (proces beëindigd)                     |
+| Huidige status      | Mogelijke vervolg statussen                      | 
+| :------------------ | :----------------------------------------------- |
+| Nieuwe aanvraag     | Optie (offerte), Offerte, Bevestigd, Geannuleerd |
+| Optie (offerte)     | Optie, Gannuleerd                                |
+| Optie               | Bevestigd, Geannuleerd                           |
+| Bevestigd           | Afgesloten, Geannuleerd                          |
+| Afgesloten          | Geen (proces voltooid)                           |
+| Geannuleerd         | Geen (proces beëindigd)                          |
