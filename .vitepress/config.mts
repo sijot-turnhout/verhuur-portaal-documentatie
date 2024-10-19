@@ -1,12 +1,13 @@
 import { defineConfig } from 'vitepress'
 import footnote from 'markdown-it-footnote'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "SIJOT Verhuurportaal docs",
   description: "De bijhorende documentatie van het verhuur portaal voor Scouts en Gidsen Sint-Joris Turnhout",
   cleanUrls: false,
-  base: '/verhuur-portaal-documentatie',
+  base: '/verhuur-portaal-documentatie/',
   srcDir: 'src',
   lastUpdated: true,
   // If this is disabled, when building it it will give deadlink errors if your markdown has the wrong links
