@@ -78,7 +78,8 @@ export default defineConfig({
         text: 'Integraties',
         collapsed: true,
         items: [
-          { text: 'Sentry', link: '/integrations/sentry' }
+          { text: 'Sentry', link: '/integrations/sentry' },
+          { text: 'Platform analytics', link: '/integrations/pan-analytics' },
         ],
       }
     ],
