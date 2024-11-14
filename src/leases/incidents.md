@@ -118,6 +118,31 @@ Deze risicobeoordeling helpt eindgebruikers om geinformeerde beslissing te namen
 - **Impactscore:** Een numerieke maatstaf die de ernst van een risico weerspeigelt als er een incident optreedt. De impact score is een optelling van de impact scores die eerder zijn geregistreerd op de huurder zijn naam.
 - **Risico-indicatie:** Een visuele indicator in de vorm van een badge die het risiconiveau van de aanvraag toont.
 
+## Configuratie van de tresholds voor de risico profielen
+
+:::warning
+De configuratie voor de tresholds staat gedocumenteerd in `config/sijot-verhuur.php` en de waardes die hier gebruikt worden in de documentatie zijn de standaard waardes.
+Indien deze niet bij je organisatie passen kan je aan de webmaster vragen om de tresholds bij te stellen naar de noden van je organisatie.
+:::
+
+De `risk_assesment` configuratie definieert drempelwaarden voor verschillende risiconiveaus.
+Elke drempel vertegenwoordigt de minimale score die hoort bij een specifiek risicoprofiel, zodat de applicatie risico's kan beoordelen en categoriseren op basis van hun ernst.
+
+### Configuratieparameters
+
+- `very_low`: Stelt een drempelwaarde in van 10. Dit profiel duidt op een "Zeer laag" risiconiveau, wat minimale bezorgdheid aangeeft. Risico's met een score onder deze drempel worden als verwaarloosbaar beschouwd en vereisen weining tot geen maatregelen.
+- `low`: Stelt een drempelwaarde in van 20. Dit profiel vertegenwoordigt een "laag" risiconiveau, wat minimale bezorgdheid aangeeft. Risico's met een score onder deze drempel worden als verwaarloosbaar beschouwd en vereisen weinig tot geen maatregelen.
+- `medium`: Stelt een drempelwaarde in van 35. Dit profiel duidt op een "Gemiddeld" risiconiveau, wat een matig risico aangeeft. Risico’s op dit niveau dienen te worden gemonitord, aangezien ze een gemiddelde kans op impact hebben en mogelijk preventieve maatregelen vereisen.
+- `high`: Stelt een drempelwaarde in van 50. Dit profiel vertegenwoordigt een "Hoog" risiconiveau, wat duidt op een bovengemiddeld risico. Risico’s bij deze drempel vereisen nauwgezette aandacht en kunnen proactieve maatregelen vereisen om mogelijke negatieve gevolgen te beperken.
+
+### Gebruik
+
+De risicoprofielen in deze configuratie dienen als maatstaven om de ernst van risico’s van verhuuraanvragen in de applicatie te classificeren. Door de berekende risicoscores met deze drempelwaarden te vergelijken, kan het systeem een consistente risicoprofiel-evaluatie bieden, wat helpt bij besluitvorming en het toewijzen van middelen.
+
+### Voorbeeld
+
+Wanneer het systeem een risicoscore berekent voor een verhuuraanvraag of een profiel van een huurder, vergelijkt het de score met deze drempelwaarden om het juiste risicoprofiel te bepalen. Een berekende score van 45 zou bijvoorbeeld vallen in het "Gemiddeld" risicoprofiel omdat het niet voldoet aan de drempel voor "Hoog" maar wel boven die van "Laag" ligt.
+
 ## Instructies voor eindgebruikers van de applicatie
 
 Via deze instructies kan de eindgebruikers tot de volgende zaken bekomen:
