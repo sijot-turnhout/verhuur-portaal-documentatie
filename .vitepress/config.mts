@@ -63,6 +63,7 @@ export default defineConfig({
           { text: 'Nutsverbruik', link: '/leases/utility-usage' },
           { text: 'Facturatie', link: '/leases/billing' },
           { text: 'Offertes', link: '/leases/quotations' },
+          { text: 'Incidenten', link: '/leases/incidents' },
         ],
       },
 
